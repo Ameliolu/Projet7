@@ -39,7 +39,7 @@ def contact():
         #on parse la requête
         data = Parser.supp_espaces(data)
         data = Parser.listage(data)
-        data = Parser.filtrage(date, STOP_WORDS)
+        data = Parser.filtrage(data, STOP_WORDS)
         data = Parser.final(data)
         
         
