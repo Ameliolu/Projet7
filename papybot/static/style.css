@@ -1,0 +1,17 @@
+p
+{
+    color: blue;
+}
+
+header
+{
+    text-align: center;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 2%;
+    width: 100%;
+    text-align: center;
+}
