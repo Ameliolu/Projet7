@@ -5,6 +5,6 @@ import os
 
 if os.environ.get('GO_KEY') is None:
     print('attention, il y a un probleme avec la clé google')
-    GOOGLE_TOKEN = "YOUR TOKEN"
+    GO_KEY = "YOUR TOKEN"
 else:
-    GOOGLE_TOKEN = os.environ['GO_KEY']
+    GO_KEY = os.environ['GO_KEY']
