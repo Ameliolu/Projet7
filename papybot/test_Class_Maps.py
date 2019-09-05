@@ -24,9 +24,9 @@ def test_get_adresse(monkeypatch):
     fake_results = "140 George St, The Rocks NSW 2000, Australia"
     
     monkeypatch.setattr(requests, 'get', fake_get_adresse)
-    adresse = Maps.get_adresse('Museum of Contemporary Art Australia')
+    adresse = Maps.get_adresse('Museum of Contemporary Art Australia', '0123456789')
     assert adresse == fake_results
 
 def test_get_carte():
-    fake_url = "https://www.google.com/maps/embed/v1/place?key=AIzaSyCMepGPJ5esQHtSx-5lg-K7q4WKFAidplU&q=Tour Eiffel"
-    assert Maps.get_carte('Tour Eiffel') == fake_url
+    fake_url = "https://www.google.com/maps/embed/v1/place?key=0123456789&q=Tour Eiffel"
+    assert Maps.get_carte('Tour Eiffel', '0123456789') == fake_url
