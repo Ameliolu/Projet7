@@ -12,6 +12,17 @@ class Parser:
         """
         t = t.strip()
         return t
+        
+    def supp_guillemets(t):
+        """
+        méthode enlevant les l' et d'
+        exemple :
+        >>> Parser.supp_guillemets("l'amour")
+        'amour'
+        """
+        t = t.replace('l\'','')
+        t = t.replace('d\'','')
+        return t
 
     def listage(t):
         """
@@ -50,13 +61,4 @@ class Parser:
  
 if __name__ == "__main__":
     import doctest
-    doctest.testmod()
-    STOP = ['le','la']
-    choix = input("choix : ")
-    texte = Parser.supp_espaces(choix)
-    texte = Parser.listage(texte)
-    texte = Parser.filtrage(texte, STOP)
-    texte = Parser.final(texte)
-    print(texte)
-"""import doctest
-doctest.testmod(verbose = True)"""
+    doctest.testmod(verbose = True)
