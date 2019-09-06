@@ -17,25 +17,26 @@
     <header>
 
         <h1>Les extraordinaires histoires de Papy Bot</h1>
+        <img class="logo" src="{{ url_for('static', filename='images/logopapybot.png')}}">
 
     </header>
 
     
-    <p class="dialogue">Bonjour mon enfant, as-tu une question ?</p>
+    <p class="dialogue"></p>
+    
+    <form method="post">
+        <p>
+            <textarea name="question" id="question" autofocus></textarea>
+        </p>
+
+    </form>
+
+    <button id="bouton">Questionner</button>    
     
 
     <footer>
 
-        <form method="post">
-            <p>
-                <textarea name="question" id="question" autofocus></textarea>
-            </p>
-            
-        <!-- <button id="bouton" formmethod="post">Questionner</button> -->
-
-        </form>
-
-        <button id="bouton">Questionner</button>
+    <p>Je suis Lucas Sniezak. Retrouvez-moi <a href="https://www.linkedin.com/in/lucas-sniezak-2a4329169">ici</a>. Vous pouvez également retrouver le code de ce projet sur <a href="https://github.com/Ameliolu/Projet7">Github</a>.
 
     </footer>
 

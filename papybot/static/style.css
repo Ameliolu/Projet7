@@ -6,6 +6,7 @@ p
 header
 {
     text-align: center;
+    /* display: flex; */
 }
 
 footer
@@ -15,3 +16,4 @@ footer
     width: 100%;
     text-align: center;
 }
+
