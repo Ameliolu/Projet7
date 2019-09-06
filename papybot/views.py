@@ -38,9 +38,9 @@ def contact():
         
         #on parse la requête
         data = Parser.supp_espaces(data)
+        data = Parser.supp_guillemets(data)
         data = Parser.listage(data)
         data = Parser.filtrage(data, STOP_WORDS)
-        print(data)
         data = Parser.final(data)
         
         

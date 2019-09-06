@@ -39,7 +39,6 @@ var questionElt = document.getElementById("question");
 $(document).ready(function(){
 
     $("button").click(function(){
-        console.log(questionElt.value)
 
         $('p[class="dialogue"]:last').append('<img src="http://www.mediaforma.com/sdz/jquery/ajax-loader.gif" class="chargement">');
 
