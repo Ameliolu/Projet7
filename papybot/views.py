@@ -18,7 +18,7 @@ app.config.from_object('config')
 
 GOOGLE_KEY = app.config['GO_KEY']
 
-STOP_WORDS = ['le','la','les']
+STOP_WORDS = ['le','la','les', 'salut', 'GrandPy', '!', '.', 'Est-ce', 'que', 'tu', 'connais', 'l\'adresse', 'd\'', '?']
  
 @app.route('/', methods=['GET', 'POST'])
 def contact():
