@@ -18,7 +18,7 @@ app.config.from_object('config')
 
 GOOGLE_KEY = app.config['GO_KEY']
 
-STOP_WORDS = ['le','la','les', 'Salut', 'GrandPy', '!', '.', 'Est-ce', 'que', 'tu', 'connais', 'l\'adresse', 'd\'', '?', ' ']
+STOP_WORDS = ['le','la','les', 'Salut', 'GrandPy', '!', '.', 'Est-ce', 'que', 'tu', 'connais', 'adresse', 'd\'', '?', ' ']
  
 @app.route('/', methods=['GET', 'POST'])
 def contact():
@@ -35,13 +35,14 @@ def contact():
 
         for elt in request.values:
             data = elt
-        
+            
         #on parse la requête
         data = Parser.supp_espaces(data)
         data = Parser.supp_guillemets(data)
         data = Parser.listage(data)
         data = Parser.filtrage(data, STOP_WORDS)
         data = Parser.final(data)
+        # print(data)
         
         
         #on tente de récupérer un descriptif wikipedia
