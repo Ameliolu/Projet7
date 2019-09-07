@@ -3,10 +3,32 @@ p
     color: blue;
 }
 
+.dialogue
+{
+    text-align: center;
+}
+
+form
+{
+    text-align: center;
+}
+
+button
+{
+    display: block;
+    margin: auto;
+    /* text-align: center; */
+}
+
 header
 {
     text-align: center;
     /* display: flex; */
+}
+
+body
+{
+   background-color: rgb(251,255,196); 
 }
 
 footer
